@@ -1,0 +1,26 @@
+= lsinv
+
+The `lsinv.sh` `bash`-script allows on linux machines running an avahi-daemon and having avahi-utils
+installed to list all available ITxPT inventory services. The default output is generated as a ```JSON``` array.
+
+== Prerequisits
+
+* The following tools need to be installed:
+    ** avahi-daemon
+    ** avahi-utils (for avahi-browse) 
+    ** grepcidr 
+    ** jq
+
+* avahi-daemon disable for IPv6
+
+== Usage
+
+Download repository and use tool directly from installation folder or copy ```/usr/local/bin```:
+[,shell]
+----
+./lsinv.h
+----
+
+== Known issues
+
+* Due to optional fields and the fact that JSON allows unsorted fields the CSV output is unreliable 
