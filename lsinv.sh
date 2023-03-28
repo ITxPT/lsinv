@@ -16,8 +16,8 @@
 #  
 #####################################################################
 #
-SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
-
+DIR=$(readlink $0)
+SCRIPT_DIR=$( cd -- "$( dirname -- "${DIR}" )" &> /dev/null && pwd )
 #check for necessary tools
 
 LIST_OF_TOOLS="avahi-daemon avahi-browse grepcidr jq"

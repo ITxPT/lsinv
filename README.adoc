@@ -13,12 +13,19 @@ installed to list all available ITxPT inventory services. The default output is 
 
 * avahi-daemon disable for IPv6
 
+_Note:_To make the script available as bash command use a symbolic link. Within the repository folder execute the following command.
+[,shell]
+----
+sudo ln -s $(pwd)/lsinv.sh /usr/local/bin/lsinv
+----
+
+
 == Usage
 
 Download repository and use tool directly from installation folder or copy ```/usr/local/bin```:
 [,shell]
 ----
-./lsinv.h
+./lsinv.sh  -i 192.168.1.0/24
 ----
 
 == Known issues
