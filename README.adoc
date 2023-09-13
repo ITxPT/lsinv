@@ -13,6 +13,29 @@ installed to list all available ITxPT inventory services. The default output is 
 
 * avahi-daemon disable for IPv6
 
+If you don't already have a folder for github repos, Create one..
+Ex:
+[,shell]
+----
+sudo mkdir /opt/git
+----
+Then move into that folder
+[,shell]
+----
+cd /opt/git
+----
+
+Then from there clone the lsinv repo
+[,shell]
+----
+sudo git clone https://github.com/ITxPT/lsinv.git
+----
+This will create a subfolder named lsinv, move into that folder..
+[,shell]
+----
+cd lsinv
+----
+
 _Note:_To make the script available as bash command use a symbolic link. Within the repository folder execute the following command:
 [,shell]
 ----
